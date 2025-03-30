@@ -9,7 +9,7 @@ import { Loader2, Copy, Download, ImageIcon } from 'lucide-react';
 import { Form, FormControl, FormDescription, FormField, FormItem, FormLabel } from '@/components/ui/form';
 import { ContentPreview } from '@/components/content-preview';
 
-const HealthcareInfosheetGenerator: React.FC = () => {
+export function HealthcareInfosheetGenerator() {
   const [isGenerating, setIsGenerating] = useState(false);
   const [content, setContent] = useState('');
 
@@ -89,6 +89,4 @@ const HealthcareInfosheetGenerator: React.FC = () => {
       )}
     </div>
   );
-};
-
-export default HealthcareInfosheetGenerator; 
+} 
